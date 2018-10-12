@@ -1,0 +1,20 @@
+volatile int rate[10];                    
+volatile unsigned long sampleCounter = 0;          
+volatile unsigned long lastBeatTime = 0;           
+volatile int P =512;                      
+volatile int T = 512;                     
+volatile int thresh = 512;               
+volatile int amp = 100;                  
+volatile boolean firstBeat = true;        
+volatile boolean secondBeat = false;      
+
+
+void interruptSetup(){     
+  int TCCR2A=0x02;
+  
+int  TCCR2B = 0x06;     
+ 
+ int  OCR2A = 0X7C;      
+  int TIMSK2 = 0x02;     
+  sei();                
+} 
