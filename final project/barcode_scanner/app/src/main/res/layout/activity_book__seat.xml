@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Book_Seat">
+
+    <TextView
+        android:id="@+id/seats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="45sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/minus"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:src="@drawable/minus"
+        android:layout_centerVertical="true"
+        android:layout_margin="50sp"
+        android:clickable="true"/>
+    <ImageView
+        android:id="@+id/plus"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:src="@drawable/plus"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="50sp"
+        android:clickable="true"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12sp"
+        android:text="SUBMIT"
+        android:textStyle="bold" />
+</RelativeLayout>
