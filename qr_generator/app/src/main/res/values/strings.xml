@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">qr_generater</string>
+    <string name="textView">Scan the QR code to book tickets</string>
+    <string name="button">Submit</string>
+    <string name="description">QRcode</string>
+</resources>
